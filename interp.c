@@ -68,9 +68,7 @@ void zero_memory() {
 void run_file(char* fname) {
   char buf[BUF_SIZE];
   char* inst;
-  int bytes_read;
-  int i;
-  int f;
+  int f, bytes_read, i;
   
   f = open(fname, O_RDONLY);
   if(f == -1) {
